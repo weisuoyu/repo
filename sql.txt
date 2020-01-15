@@ -1,0 +1,18 @@
+# 修改密码：
+set password for root@localhost = password('123456');
+#导出：
+mysqldump -uroot -p android >e:\android.sql
+#导入：
+1.create database [dbname]
+2.use [dbname]
+3. source [sql文件路径] // 如：source e:/android.sql 
+#add foreign key 
+create table info(id int,user_id int,foreign key info_fk(id) references user(id) on delete restrict);//建表时
+alter table action_record add constraint foreign key action_id_fk(action_id) references action(id) on delete restrict on update restrict; //表已经存在
+#del foreign key
+
+#查看约束
+SHOW CREATE TABLE <数据表名>;
+
+#删除unique约束
+alter table 表名 drop index 字段名

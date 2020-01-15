@@ -1,0 +1,200 @@
+﻿Creates a new arraywith the specified component type and dimensions.If componentTyperepresents a non-array class or interface, the new arrayhas dimensions.length dimensions and componentType as its component type. If componentType represents an array class, thenumber of dimensions of the new array is equal to the sumof dimensions.length and the number ofdimensions of componentType. In this case, thecomponent type of the new array is the component type of componentType. 
+android:usesCleartextTraffic="true"
+emulator -avd Pixel_2_API_28 -dns-server 8.8.8.8,114.114.114.114
+
+
+
+ 1D5DE0D48D944FD0875CDC7EB45C8223
+05-22 17:33:15.192 11950-11950/com.zsy.oldsdkdemo I/LgRuntimeCkurl: http://158.222.65.236:9080/bgis-manager/accesstoken.action
+05-22 17:33:15.232 11950-11950/com.zsy.oldsdkdemo I/LgRuntimeCATonres: {"opMsg":"请检查相关配置:Value for accesstoken cannot be null","opResult":"error","resultData":null}
+2019-05-21 17:31:14.490 10209-10226/com.zsy.oldsdkdemo E/MemoryLeakMonitorManager: MemoryLeakMonitor.jar is not exist!
+2019-05-21 17:31:23.534 10209-10272/com.zsy.oldsdkdemo E/AndroidRuntime: FATAL EXCEPTION: Thread-9
+    Process: com.zsy.oldsdkdemo, PID: 10209
+    java.lang.NoClassDefFoundError: Failed resolution of: Lorg/apache/http/ProtocolVersion;
+        at com.android.volley.toolbox.HurlStack.performRequest(HurlStack.java:140)
+        at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:83)
+        at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:105)
+     Caused by: java.lang.ClassNotFoundException: Didn't find class "org.apache.http.ProtocolVersion" on path: DexPathList[[zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/base.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_dependencies_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_resources_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_0_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_1_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_2_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_3_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_4_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_5_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_6_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_7_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_8_apk.apk", zip file "/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_9_apk.apk"],nativeLibraryDirectories=[/data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/lib/arm, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/base.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_dependencies_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_resources_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_0_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_1_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_2_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_3_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_4_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_5_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_6_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_7_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_8_apk.apk!/lib/armeabi-v7a, /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_slice_9_apk.apk!/lib/armeabi-v7a, /system/lib, /product/lib]]
+        at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+        at com.android.volley.toolbox.HurlStack.performRequest(HurlStack.java:140)?
+        at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:83)?
+        at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:105)?
+    	Suppressed: java.io.IOException: No original dex files found for dex location /data/app/com.zsy.oldsdkdemo-5BrOc4lMGjTVOGOea8B17g==/split_lib_resources_apk.apk
+        at dalvik.system.DexFile.openDexFileNative(Native Method)
+        at dalvik.system.DexFile.openDexFile(DexFile.java:354)
+        at dalvik.system.DexFile.<init>(DexFile.java:101)
+        at dalvik.system.DexFile.<init>(DexFile.java:75)
+        at dalvik.system.DexPathList.loadDexFile(DexPathList.java:394)
+        at dalvik.system.DexPathList.makeDexElements(DexPathList.java:354)
+        at dalvik.system.DexPathList.<init>(DexPathList.java:164)
+        at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:74)
+        at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:65)
+2019-05-21 17:31:23.534 10209-10272/com.zsy.oldsdkdemo E/AndroidRuntime:     at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:64)
+        at com.android.internal.os.ClassLoaderFactory.createClassLoader(ClassLoaderFactory.java:73)
+        at com.android.internal.os.ClassLoaderFactory.createClassLoader(ClassLoaderFactory.java:88)
+        at android.app.ApplicationLoaders.getClassLoader(ApplicationLoaders.java:84)
+        at android.app.ApplicationLoaders.getClassLoader(ApplicationLoaders.java:40)
+        at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:801)
+        at android.app.LoadedApk.getClassLoader(LoadedApk.java:884)
+        at android.app.LoadedApk.getResources(LoadedApk.java:1135)
+        at android.app.ContextImpl.createAppContext(ContextImpl.java:2623)
+        at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6568)
+        at android.app.ActivityThread.access$2000(ActivityThread.java:273)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2011)
+        at android.os.Handler.dispatchMessage(Handler.java:112)
+        at android.os.Looper.loop(Looper.java:216)
+        at android.app.ActivityThread.main(ActivityThread.java:7593)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:987)
+
+
+
+
+
+
+WebStorm2018.2
+yarn global dir
+
+1-5000   2-3000  3-8000  4-2000  5-4000  6-1000    7-7000 8-2500
+k=1
+5000  
+
+k=2 j=1
+3000 5000
+
+k=3 j=1
+3000 5000 8000
+
+k=4 j=2                          
+3000 2000 8000 5000 -> 
+k=2 j=1
+2000 3000 8000 5000
+
+k =5 j=2  
+2000 3000 8000 5000 4000
+
+k=6 j=3 
+2000 3000 1000 5000 4000 8000
+k=3 j=1
+1000 3000 2000 5000 4000 8000
+
+k=7 j=3
+1000 3000 2000 5000 4000 8000 7000
+
+k=8 j=4
+1000 3000 2000 2500 4000 8000 7000 5000
+k=4 j=2
+1000 2500 2000 3000 4000 8000 7000 5000
+=======================================
+
+2000 2500 2000 3000 4000 8000 7000 5000
+k=1 j=2 +1
+
+3000 2500 2000 3000 4000 8000 7000 5000
+k=1,j=2+1
+2000 2500 3000 3000 4000 8000 7000 5000
+k=3 j=6+1
+
+4000 2500 3000 3000 4000 8000 7000 5000
+k=1 j=2
+2500 4000  3000 3000 4000 8000 7000 5000
+k=2 j=4
+
+5000 4000  3000 3000 4000 8000 7000 5000
+k=1 j=2+1
+3000 4000  5000 3000 4000 8000 7000 5000
+k=3 j=6+1
+
+6000 4000  5000 3000 4000 8000 7000 5000
+
+k=1 j =2
+4000 6000  5000 3000 4000 8000 7000 5000
+k=2 j =4
+4000 3000  5000 6000 4000 8000 7000 5000
+k=4 j=8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://158.222.177.50:80/arcgis/rest/services/ChinaXZQ/MapServer
+http://158.222.177.50:80/arcgis/rest/services/ZJEMAPANNO/MapServer
+http://158.222.177.50:80/arcgis/rest/services/ZJEMAP/MapServer
+
+AAPT android assets pakging tool 资源文件->二进制文件 
+AIDL 工具 AIDL接口->java 接口
+编译器 .java->.class
+
+run-as [package name]
+
+，
+
+insert into company values(2,"lisi",21,100);
+insert into company values(3,"wangwu",23,100);
+insert into company values(4,"zhaoliu",25,100);
+insert into company values(5,"sunwu",25,100);
+insert into company values(6,"zhouzhou",26,100);
+insert into company values(7,"fengfeng",25,100);
+
+
+
+
+
+        helper.delPoi(guid, new EmptyConsumer() {
+            @Override
+            protected void onComplete() {
+                //TODO 删除成功
+            }
+
+            @Override
+            protected void onError(Throwable throwable) {
+                //TODO 删除失败
+            }
+        });
+曾经是真睡没觉醒，现在是麻木中装睡；曾经在沉默中爆发，现在……
+
+
+盘前尽量想好各种情况及对应操作
+选择：蓝筹、QFII等绩优股（防雷）+低位震荡较长时间+趋势转好（K线）?+低位？ +（大盘暴跌时经受住考验）
+坚持判断+需结合K线(防范风险)=高抛低吸
+买点：（相对低价位或新高）
+0.平安到关键点
+1.题材龙头（需考验）
+2.急跌之后急拉
+3.暴跌破位后重新站上
+卖点:
+破位和止损点后坚决卖出
+出报前卖（防雷）
+出货诱多：快拉之后通常有一波缓拉（或先跌后涨）
+1.盘前想好操作，盘中机械执行不犹豫
+2.低位僵持+利好，可视作牛市重仓操作一两天
+3.牛市选波动幅度大的股
+
+
+
+
+
+我们的运气其实不错了，起码生命、财产和自由有一定的保障，物质和娱乐资源相对也很充足
+
+人类只有两种状态：孤独和忘记孤独。孤独就是面对自我，忘记孤独就是迷失自我
+
+美化自己丑化敌人可以理解，但是好歹稍微客观一点，脱离现实，瞎编乱造，漏洞百出只能愚弄一下愚昧无知之人，在明眼人看来就是一个笑话，就算部分人一时被骗了，等到人家明白过来只会觉得恶心
+
+大树病了
+一棵大树的根逐渐腐烂，树干上长满了毒瘤，树叶上爬满蛀虫，那怕土壤再肥沃，根系再发达，拼命地汲取养分，也无法长久支撑。最好的情况是出来一位伟大的医生使其恢复健康；其次是大树彻底死亡倒下，一棵健康的种子在它的身上生根发芽获得新生；最坏的情况是，每当大树将倒之时，稍微治疗一下，让大树勉强不倒，在半死不活中长存……
+
+由上而下的社会，底层人民在那些人眼里就是被畜养剥削的牲口，死活没人在乎，当然底层的人民往往愚昧无知，曾经一位在乎他们伟人，却被伤透了心，从个体来看是不幸的值得同情的，从群体来看，就是活该
+说是人人平等，实则阶级分明，坐在高位的人，如果没有更大的大佬想搞他，哪怕它丧尽天良，灭绝人性也不会有事，就算群情激愤，随便找只替罪羔羊就完事了，之前的奶粉、疫苗事件都是如此

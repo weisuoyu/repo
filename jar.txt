@@ -1,0 +1,8 @@
+jar -xvf core.jar
+jar -cvfM s.jar .
+ 
+
+
+jar xf filename （解压）
+jar cf des.jar  . (打包，注意最后的点)
+

@@ -1,0 +1,25 @@
+//²é¿´ÒÀÀµÊ÷
+gradlew -q :app:dependencies --configuration implementation
+
+//jitpack repository
+maven { url 'https://jitpack.io' }
+
+//my java lib
+implementation 'com.github.zhisuoyu:framework:1.0.1'
+implementation 'com.github.zhisuoyu:wrapper:1.0.1'
+implementation 'com.github.zhisuoyu:utils:1.0.0'
+annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+apply plugin: 'kotlin-kapt'
+
+//  repositories
+maven { url 'https://maven.aliyun.com/repository/google' }
+maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+maven { url 'https://maven.aliyun.com/repository/public' }
+maven { url 'https://maven.aliyun.com/repository/jcenter' }
+maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+
+android{
+kotlinOptions { jvmTarget = 1.8 }
+}
